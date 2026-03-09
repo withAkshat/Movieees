@@ -7,8 +7,6 @@ export default function Navbar() {
     state => state.auth
   )
 
-  console.log(user);
-  
   return (
 
     <nav style={{ display: "flex", gap: "20px", padding: "20px" }}>

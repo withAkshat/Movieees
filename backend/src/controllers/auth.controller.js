@@ -33,7 +33,12 @@ export const register = async (req, res, next) => {
         email
     })
 
-    res.status(201).cookie("token", token).json({
+    res.status(201).cookie("token", token, {
+            httpOnly: true,
+            secure: true,
+            sameSite: "none"
+        }
+    ).json({
         message: "User registered sucessfully",
         user: {
             username,
@@ -57,6 +62,7 @@ export const login = async (req, res, next) => {
     }).select("+password")
 
 
+
     if (user && await bcrypt.compare(password, user.password)) {
 
         const token = await generateToken({
@@ -65,7 +71,12 @@ export const login = async (req, res, next) => {
             email
         })
 
-        res.status(200).cookie("token", token).json({
+        res.status(200).cookie("token", token, {
+            httpOnly: true,
+            secure: true,
+            sameSite: "none"
+        }
+    ).json({
             message: "User Logined",
             user: {
                 username: user.username,

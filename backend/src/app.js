@@ -14,7 +14,7 @@ const app = express()
 
 
 app.use(cors({
-    origin: "https://movieees-eta.vercel.app",
+    origin:"https://movieees-eta.vercel.app",
     credentials: true
 }))
 app.use(express.json())

@@ -18,8 +18,6 @@ export const getHistory = createAsyncThunk(
   async () => {
 
     const res = await backend.get("/user/watch-history")
-    console.log(res);
-    
     return res.data
   }
 )
