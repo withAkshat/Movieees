@@ -41,7 +41,7 @@ export const getFavorites = async (req, res) => {
 
     res.status(200).json({
         message: "User favorites fetched!",
-        watchHistory: user.favorites
+        userFavorites: user.favorites
     })
 }
 

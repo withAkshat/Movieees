@@ -6,16 +6,16 @@ import jwt from "jsonwebtoken"
 export const identifyUser = async (req, res, next) => {
 
     let token;
-
+        
     try {
+        token = req.cookies.token;
        
-        token = req.cookies.token;        
         const decoded = jwt.verify(token, process.env.JWT_SECRET)
         req.user = decoded;
         next()
     }
     catch (e) {
-        
+            
         const error = new Error("User not authorized")
         error.status = 401
         next(error)
