@@ -1,6 +1,6 @@
 import axios from "axios"
 
 export const backend = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://movieees.onrender.com/api",
   withCredentials: true
 })
