@@ -17,7 +17,6 @@ export default function Signup(){
     e.preventDefault()
 
     dispatch(signupUser({name,email,password}))
-
   }
 
 

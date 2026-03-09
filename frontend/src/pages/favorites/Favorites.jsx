@@ -4,8 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { getFavorites } from "../../features/favorites/favorite.slice.js"
 import  tmdb  from "../../shared/api/tmdb.js"
 
-import MovieCard from "../../shared/components/MovieCard"
-
+import MovieCard from "../../shared/components/MovieCard.jsx"
 
 export default function Favorites(){
 

@@ -6,7 +6,6 @@ import  tmdb  from "../../shared/api/tmdb.js"
 
 import MovieCard from "../../shared/components/MovieCard.jsx"
 
-
 export default function History(){
 
   const dispatch = useDispatch()

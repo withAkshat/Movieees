@@ -18,7 +18,6 @@ export default function Search() {
     state => state.movies  //returns movies
   )
 
-
   useEffect(() => {
 
     if (debouncedQuery) {

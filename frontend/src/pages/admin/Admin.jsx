@@ -12,7 +12,6 @@ export default function Admin(){
 
   const fetchMovies = async () => {
     const res = await backend.get("/movie/all-movie")
-    console.log(res);
     
     setMovies(res.data.movies)
 

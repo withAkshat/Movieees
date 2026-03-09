@@ -16,9 +16,7 @@ export default function Home() {
   )
 
   useEffect(() => {
-
     dispatch(fetchTrendingMovies(1))
-
   }, [dispatch])
 
 
