@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { getHistory } from "../../features/history/history.slice.js"
 import  tmdb  from "../../shared/api/tmdb.js"
 
-import MovieCard from "../../shared/components/MovieCard"
+import MovieCard from "../../shared/components/MovieCard.jsx"
 
 
 export default function History(){
