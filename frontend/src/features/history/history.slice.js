@@ -25,7 +25,7 @@ export const getHistory = createAsyncThunk(
 
 const historySlice = createSlice({
 
-  name:"history",
+  name:"history" ,
 
   initialState:{
     list:[]
